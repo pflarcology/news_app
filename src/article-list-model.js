@@ -1,10 +1,14 @@
 (function(exports) {
   function ArticleList() {
-    this.listOfArticles = []
+    this.listOfArticles = [];
   };
 
   ArticleList.prototype.returnList = function() {
     return this.listOfArticles;
+  }
+
+  ArticleList.prototype.addArticle = function(article) {
+    this.listOfArticles.push(article);
   }
 
   exports.ArticleList = ArticleList;
