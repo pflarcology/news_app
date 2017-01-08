@@ -1,6 +1,6 @@
 (function(exports){
-  function ArticleListView() {
-    
+  function ArticleListView(articleListModel) {
+    this.articleListModel = articleListModel
   }
 
   exports.ArticleListView = ArticleListView

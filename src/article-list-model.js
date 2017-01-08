@@ -1,15 +1,15 @@
 (function(exports) {
-  function ArticleList() {
+  function ArticleListModel() {
     this.listOfArticles = [];
   };
 
-  ArticleList.prototype.returnList = function() {
+  ArticleListModel.prototype.returnList = function() {
     return this.listOfArticles;
   }
 
-  ArticleList.prototype.addArticle = function(article) {
+  ArticleListModel.prototype.addArticle = function(article) {
     this.listOfArticles.push(article);
   }
 
-  exports.ArticleList = ArticleList;
+  exports.ArticleListModel = ArticleListModel;
 })(this);

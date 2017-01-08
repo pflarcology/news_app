@@ -1,18 +1,18 @@
 function testArticleList() {
-  var articleList = new ArticleList();
-  assert.isTrue(articleList, "testArticleList")
+  var articleListModel = new ArticleListModel();
+  assert.isTrue(articleListModel, "testArticleList")
 }
 
 function testArticleListIsAnArray() {
-  var articleList = new ArticleList();
-  assert.isTrue(articleList.returnList() instanceof Array, "testArticleListIsAnArray")
+  var articleListModel = new ArticleListModel();
+  assert.isTrue(articleListModel.returnList() instanceof Array, "testArticleListIsAnArray")
 }
 
 function testAddingArticles() {
-  var articleList = new ArticleList();
+  var articleListModel = new ArticleListModel();
   var articleDouble = {};
-  articleList.addArticle(articleDouble);
-  assert.isTrue(articleList.returnList().length == 1, "testAddingArticles")
+  articleListModel.addArticle(articleDouble);
+  assert.isTrue(articleListModel.returnList().length == 1, "testAddingArticles")
 }
 
 testArticleList();
