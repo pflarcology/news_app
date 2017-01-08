@@ -2,7 +2,7 @@
 
 function Article(headline, story) {
   this.headline = headline;
-  this.story = story
+  this.story = story;
 }
 
 Article.prototype.revealHeadline = function() {
