@@ -13,6 +13,13 @@ function testArticleStory() {
   assert.isTrue(article.revealStory() == "Groundbreaking story", "testArticleStory")
 }
 
+function testArticleHasUniqueID() {
+  var article = new Article("Breaking new stuff", "Groundbreaking story");
+  var article2 = new Article("Breaking new stuff", "Groundbreaking story")
+  assert.isTrue(article.id + 1 == article2.id, "testArticleHasUniqueID")
+}
+
 testNoteInstantiation();
 testArticleHeadline();
 testArticleStory();
+testArticleHasUniqueID();

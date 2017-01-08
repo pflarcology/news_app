@@ -14,8 +14,8 @@ function testInnerHtml(){
   articleController.changeHtml();
   element = document.getElementById('app')
   assert.isTrue(element.innerHTML === "<ul><li><div>Breaking new stuff</div><div>Groundbreaking story</div></li></ul>", "testInnerHtml")
-
 };
+
 
 testArticleController();
 testInnerHtml();
